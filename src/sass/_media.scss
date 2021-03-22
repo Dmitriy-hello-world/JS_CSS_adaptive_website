@@ -1,0 +1,174 @@
+@media (max-width: 1200px) {
+
+    //advantages 
+    .advantages {
+        &__item {
+            width: 219px;
+        }
+    }
+
+    //consultation
+    .consultation {
+        .section-name {
+            font-size: 31px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    //promo
+    .promo {
+        padding: 21px 98px 32px 98px;
+
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__official {
+            display: block;
+        }
+    }
+
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+
+    //advantages
+    .advantages {
+        &__wrapper {
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            width: 294px;
+            margin-top: 50px;
+        }
+
+        &__title {
+            margin-top: 15px;
+        }
+
+        &__text {
+            margin-top: 15px;
+        }
+    }
+
+    //consultation
+    .consultation {
+        padding: 50px 103px 50px 103px;
+        min-height: 580px;
+
+        .section-name {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        &__subheader {
+            text-align: center;
+        }
+
+        .feed-form {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    //promo
+    .promo {
+        min-height: 560px;
+
+        &__header {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        &__subheader {
+            display: none;
+        }
+    }
+
+    .header {
+        justify-content: center;
+
+        &__order {
+            display: none;
+        }
+    }
+
+    //consultation
+    .consultation {
+        padding: 50px 10px 0 10px;
+        min-height: 500px;
+
+        .section-name {
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        &__subheader {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    //promo
+    .promo {
+        padding: 21px 0px 32px 0px;
+        min-height: 450px;
+
+        &__icons {
+            display: none;
+        }
+
+        &__header {
+            text-align: center;
+        }
+
+        .button_main {
+            width: 250px;
+        }
+    }
+
+    //advantages
+    .advantages {
+        padding: 30px 0px 65px 0px;
+
+        &__section-name {
+            font-size: 21px;
+        }
+
+        &__item {
+            margin-top: 25px;
+        }
+
+        &__title {
+            margin-top: 10px;
+        }
+
+        &__text {
+            margin-top: 10px;
+        }
+    }
+
+    //consultation
+    .consultation {
+        .feed-form {
+            width: 250px;
+
+            .button_form {
+                width: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.button {
+    width: 153px;
+    height: 32px;
+    background: #C70101;
+    border-radius: 5px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        background: #e70f0f;
+    }
+
+    &_main {
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    &_form {
+        width: 303px;
+        height: 58px;
+        font-size: 16px;
+    }
+}
