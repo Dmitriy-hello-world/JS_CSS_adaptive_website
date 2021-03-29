@@ -7,6 +7,7 @@
     margin: 0 auto;
 }
 
+@import 'variables';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/button';
@@ -15,5 +16,7 @@
 @import 'blocks/consultation';
 @import 'blocks/feed-form';
 @import 'blocks/slider';
+@import 'blocks/catalog';
+@import 'blocks/card';
 
 @import 'media';

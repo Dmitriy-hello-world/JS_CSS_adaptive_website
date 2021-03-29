@@ -1,0 +1,56 @@
+.catalog {
+    padding: 0 0 79px 0;
+
+    &__tabs {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tab {
+        margin: 0 5px;
+        width: 222px;
+        height: 52px;
+        border: 2px solid #D0D0D0;
+        transform: skewX(-25deg);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        line-height: 48px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 2px 2px 15px $main-color;
+            border: none;
+        }
+
+        div {
+            transform: skewX(25deg);
+        }
+
+        &_active {
+            background: $main-color;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    &__cards {
+        margin-top: 57px;
+        display: none;
+        flex-wrap: wrap;
+        padding: 0 98px;
+
+        &_fitnes {
+            display: none;
+        }
+    }
+
+    &__card {
+        margin: 0 7px 20px 0;
+    }
+}
