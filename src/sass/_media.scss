@@ -119,6 +119,11 @@
             padding: 0;
         }
     }
+
+    //comments 
+    .comments {
+        padding: 0 50px 48px 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -204,6 +209,12 @@
         }
     }
 
+    //comments 
+    .comment {
+        &__img {
+            padding-right: 20px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -288,4 +299,25 @@
         }
     }
 
+    //comments 
+    .section-name {
+        font-size: 27px;
+    }
+
+    .comments {
+        padding: 0 10px 48px 10px;
+
+        &__comment {
+            margin-top: 40px;
+        }
+    }
+
+    .comment {
+        flex-direction: column;
+        align-items: center;
+
+        &__name {
+            margin-top: 20px;
+        }
+    }
 }

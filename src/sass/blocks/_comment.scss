@@ -1,0 +1,35 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+
+    &__img {
+        padding-right: 61px;
+        max-height: 169px;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        color: #0D0D0D;
+    }
+
+    &__count {
+        margin-top: 3px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #646464;
+    }
+
+    &__text {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0D0D0D;
+    }
+}
