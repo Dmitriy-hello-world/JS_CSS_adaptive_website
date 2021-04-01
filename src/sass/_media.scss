@@ -124,6 +124,28 @@
     .comments {
         padding: 0 50px 48px 50px;
     }
+
+    //footer 
+    .footer {
+        &__info {
+            padding: 30px;
+            width: 360px;
+            height: 220px;
+        }
+
+        &__addr {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        &__tel {
+            font-size: 18px;
+        }
+
+        &__icons {
+            margin-top: 25px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -318,6 +340,34 @@
 
         &__name {
             margin-top: 20px;
+        }
+    }
+
+    //footer 
+    .footer {
+        min-height: 430px;
+
+        &__info {
+            padding: 20px;
+            width: 300px;
+            height: 180px;
+        }
+
+        &__addr {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        &__tel {
+            font-size: 16px;
+        }
+
+        &__icons {
+            margin-top: 20px;
+        }
+
+        &__map {
+            height: 430px;
         }
     }
 }
