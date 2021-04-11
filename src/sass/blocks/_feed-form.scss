@@ -21,6 +21,10 @@
         }
     }
 
+    &_m25auto {
+        margin: 25px auto 0 auto;
+    }
+
     //delete arrows in input type=number All browsers
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {

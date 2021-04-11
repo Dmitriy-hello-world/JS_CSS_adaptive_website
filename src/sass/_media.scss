@@ -370,4 +370,31 @@
             height: 430px;
         }
     }
+
+    //modal window
+    .modal {
+        width: 300px;
+
+        &__header {
+            font-size: 17px;
+        }
+
+        &__subheader {
+            font-size: 13px;
+        }
+
+        &__close {
+            top: 2px;
+            right: 5px;
+        }
+
+        .feed-form {
+            width: 250px;
+        }
+
+        .button_form {
+            width: 250px;
+            height: 46px;
+        }
+    }
 }
