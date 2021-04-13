@@ -4,6 +4,7 @@ import mainSlider from './modules/slider';
 import tabs from './modules/tabs';
 import card from './modules/card';
 import toggleModal from './modules/modal';
+import validate from './modules/validate';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -17,14 +18,15 @@ window.addEventListener('DOMContentLoaded', () => {
         dotsActive: '.slider__dot',
     });
 
-    tabs('.catalog__cards','.catalog__tab');
+    tabs('.catalog__cards', '.catalog__tab');
 
-    card({ more: '.card__more a',
-           back: '.card__back a',
-           main: '.card__main-side',
-           other: '.card__other-side',
-           mainActive: 'card__main-side_active',
-           otherActive: 'card__other-side_active',
+    card({
+        more: '.card__more a',
+        back: '.card__back a',
+        main: '.card__main-side',
+        other: '.card__other-side',
+        mainActive: 'card__main-side_active',
+        otherActive: 'card__other-side_active',
     });
 
     toggleModal({
@@ -36,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
         modalBuy: '#buy',
         pulsNames: '.card__title',
         modalName: '.modal__subheader',
-    });       
+    });
 
+    validate('form', '[name="name"]', '[name="phone"]', '[name="email"]');
 });

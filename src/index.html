@@ -94,9 +94,9 @@
             <div class="consultation__subheader">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10
                 минут
             </div>
-            <form action="" class="feed-form">
-                <input required type="text" placeholder="Ваше имя" name="name">
-                <input required type="number" placeholder="Ваш телефон" name="phone">
+            <form id="consultation-form" action="" class="feed-form">
+                <input required type="text" maxlength="16" minlength="2" placeholder="Ваше имя" name="name">
+                <input required type="number" maxlength="24" minlength="3" placeholder="Ваш телефон" name="phone">
                 <input required type="email" placeholder="Ваш E-mail" name="email">
                 <button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
