@@ -38,7 +38,18 @@ window.addEventListener('DOMContentLoaded', () => {
         modalBuy: '#buy',
         pulsNames: '.card__title',
         modalName: '.modal__subheader',
+        thanks: '#thanks',
     });
 
-    validate('form', '[name="name"]', '[name="phone"]', '[name="email"]');
+    validate({
+        mainForms: 'form',
+        formName: '[name="name"]',
+        formPhone: '[name="phone"]',
+        formEmail: '[name="email"]',
+        modalThanks: '#thanks',
+        modalOrder: '#order',
+        modalBuy: '#buy',
+        back: '.overlay'
+    });
+
 });
