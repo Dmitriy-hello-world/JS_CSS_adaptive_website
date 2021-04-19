@@ -5,6 +5,7 @@ import tabs from './modules/tabs';
 import card from './modules/card';
 import toggleModal from './modules/modal';
 import validate from './modules/validate';
+import pageUp from './modules/pageUp';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -51,5 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
         modalBuy: '#buy',
         back: '.overlay'
     });
+
+    pageUp('.page-up');
 
 });
