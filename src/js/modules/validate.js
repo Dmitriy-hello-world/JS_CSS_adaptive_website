@@ -183,7 +183,7 @@ function validate({
             body: body
         });
 
-        return response.text();
+        return response;
     }
 }
 

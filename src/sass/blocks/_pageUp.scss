@@ -7,4 +7,12 @@
     bottom: 50px;
     opacity: 0;
     transition: 0.7s all;
+
+    &_animate {
+        animation: buttonBeat 1s infinite;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }

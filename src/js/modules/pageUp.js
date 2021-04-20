@@ -1,7 +1,7 @@
 function pageUp(upLink) {
 
     const up = document.querySelector(upLink),
-        links = document.querySelectorAll('a[href^="#"]');
+        links = document.querySelectorAll('a[href="#up"]');
 
     window.addEventListener('scroll', event => {
 

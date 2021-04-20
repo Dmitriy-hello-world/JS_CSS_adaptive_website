@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -14,10 +14,10 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'dmitriy.test.mail@gmail.com';                 // Наш логин
-$mail->Password = 'QZw4Czxv2sVeX3u';                           // Наш пароль от ящика
+$mail->Password = 'xxxx';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
- 
+
 $mail->setFrom('dmitriy.test.mail@gmail.com', 'Pulse');   // От кого письмо 
 $mail->addAddress('easportstng@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
@@ -35,8 +35,8 @@ $mail->Body    = '
 	Номер телефона: ' . $phone . '<br>
 	E-mail: ' . $email . '';
 
-if(!$mail->send()) {
-    return false;
+if (!$mail->send()) {
+	return false;
 } else {
-    return true;
+	return true;
 }

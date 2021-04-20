@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="/images/favicon/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -94,16 +95,16 @@
             <div class="consultation__subheader">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10
                 минут
             </div>
-            <form method="POST" id="consultation-form" action="" class="feed-form">
+            <form method="POST" id="consultation-form" action="mailer/smart.php" class="feed-form">
                 <input required type="text" maxlength="16" minlength="2" placeholder="Ваше имя" name="name">
-                <input required type="number" maxlength="24" minlength="3" placeholder="Ваш телефон" name="phone">
+                <input required type="number" placeholder="Ваш телефон" name="phone">
                 <input required type="email" placeholder="Ваш E-mail" name="email">
                 <button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
 
-    <section class="slider">
+    <div class="slider">
         <div class="container">
             <div class="slider__wrapper">
                 <div class="slider__window">
@@ -133,11 +134,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
-            <div class="section-name section-name_uppercase">Каталог пульсометров</div>
+            <h2 class="section-name section-name_uppercase">Каталог пульсометров</h2>
             <div class="catalog__tabs">
                 <div class="catalog__tab catalog__tab_active">
                     <div>Для фитнеса</div>
@@ -430,7 +431,7 @@
 
     <section class="comments">
         <div class="container">
-            <div class="section-name">отзывы клиентов</div>
+            <h2 class="section-name">отзывы клиентов</h2>
             <div class="comment comments__comment">
                 <img src="images/comments/comment1.png" alt="photo" class="comment__img">
                 <div class="comment__inner">
@@ -475,7 +476,7 @@
     <footer class="footer">
         <iframe class="footer__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4673134953423!2d37.645794368810236!3d55.76775522351449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1617262502174!5m2!1sru!2sua"
-            width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            allowfullscreen="" loading="lazy"></iframe>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
             <div class="footer__tel-block"><a href="tel:84999228974" class="footer__tel">8 (499) 922-89-74</a></div>
@@ -491,8 +492,8 @@
         <div class="modal" id="order">
             <div class="modal__header">Просто заполните форму заявки</div>
             <div class="modal__subheader">и мы перезвоним вам в течении 10 минут</div>
-            <form method="POST" action="" class="feed-form feed-form_m25auto">
-                <input required type="text" placeholder="Ваше имя" name="name">
+            <form method="POST" action="mailer/smart.php" class="feed-form feed-form_m25auto">
+                <input required type="text" maxlength="16" minlength="2" placeholder="Ваше имя" name="name">
                 <input required type="number" placeholder="Ваш телефон" name="phone">
                 <input required type="email" placeholder="Ваш E-mail" name="email">
                 <button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
@@ -503,8 +504,8 @@
         <div class="modal" id="buy">
             <div class="modal__header">Ваш заказ:</div>
             <div class="modal__subheader">Пульсометр Polar FT1</div>
-            <form method="POST" action="" class="feed-form feed-form_m25auto">
-                <input required type="text" placeholder="Ваше имя" name="name">
+            <form method="POST" action="mailer/smart.php" class="feed-form feed-form_m25auto">
+                <input required type="text" maxlength="16" minlength="2" placeholder="Ваше имя" name="name">
                 <input required type="number" placeholder="Ваш телефон" name="phone">
                 <input required type="email" placeholder="Ваш E-mail" name="email">
                 <button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
@@ -519,7 +520,7 @@
         </div>
     </div>
 
-    <a href="#up" class="page-up">
+    <a href="#up" class="page-up page-up_animate">
         <img src="./images/pageUp/pageUp.svg" alt="pageUp">
     </a>
 
