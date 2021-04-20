@@ -1,7 +1,8 @@
 function pageUp(upLink) {
 
     const up = document.querySelector(upLink),
-        links = document.querySelectorAll('a[href="#up"]');
+        linksUp = document.querySelectorAll('a[href="#up"]'),
+        linkDown = document.querySelector('a[href="#catalog"]');
 
     window.addEventListener('scroll', event => {
 
@@ -12,7 +13,7 @@ function pageUp(upLink) {
         }
     });
 
-    links.forEach(link => {
+    linksUp.forEach(link => {
         link.addEventListener('click', event => {
 
             event.preventDefault();
@@ -23,6 +24,17 @@ function pageUp(upLink) {
                 behavior: 'smooth',
                 block: 'start'
             });
+        });
+    });
+
+    linkDown.addEventListener('click', event => {
+        event.preventDefault();
+
+        const id = linkDown.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
     });
 
